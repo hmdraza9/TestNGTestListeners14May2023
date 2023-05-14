@@ -1,3 +1,5 @@
+package com.listeners.Listeners;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -7,6 +9,7 @@ public class TestListenerClass implements ITestListener {
     int testCaseCount = 0;
     int testCasePassCount = 0;
     int testCaseFailCount = 0;
+    boolean isSuitePass = false;
 
     @Override
     public void onFinish(ITestContext Result) {
@@ -17,17 +20,19 @@ public class TestListenerClass implements ITestListener {
         if(testCaseCount>0){
             float temp = (float) testCasePassCount /testCaseCount;
             System.out.printf("Pass - %.2f", temp);
-            System.out.println("");
+            System.out.println(" ");
             temp = temp*100;
 
             if(temp>59){
 
                 System.out.println("Threshold reached!");
+                isSuitePass = true;
 
             }
             else{
 
                 System.out.println("Test suite failed");
+                isSuitePass = false;
 
             }
 

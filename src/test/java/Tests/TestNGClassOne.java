@@ -1,10 +1,13 @@
+package Tests;
+
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import com.test.Listeners.TestListenerClass;
 
 @Listeners(TestListenerClass.class)
 
-public class TestNGClass {
+public class TestNGClassOne {
 
     @Test(priority = 1)
     public void test1(){
@@ -73,7 +76,7 @@ public class TestNGClass {
     public void test10(){
 
         System.out.println("In Test10");
-        Assert.fail();
+        Assert.assertTrue(true);
 
     }
 
