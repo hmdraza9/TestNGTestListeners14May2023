@@ -3,7 +3,7 @@ package Tests;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import com.test.Listeners.TestListenerClass;
+import com.listeners.Listeners.TestListenerClass;
 
 @Listeners(TestListenerClass.class)
 
