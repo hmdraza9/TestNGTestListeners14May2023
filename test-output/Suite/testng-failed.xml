@@ -3,18 +3,8 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ListenersPractice(failed)">
     <classes>
-      <class name="Tests.TestNGClassOne">
-        <methods>
-          <include name="test8"/>
-          <include name="test4"/>
-          <include name="test9"/>
-          <include name="test6"/>
-          <include name="test5"/>
-        </methods>
-      </class> <!-- Tests.TestNGClassOne -->
       <class name="Tests.TestNGClassTwo">
         <methods>
-          <include name="test12"/>
           <include name="test16"/>
           <include name="test14"/>
           <include name="test15"/>
@@ -22,6 +12,16 @@
           <include name="test19"/>
         </methods>
       </class> <!-- Tests.TestNGClassTwo -->
+      <class name="Tests.TestNGClassOne">
+        <methods>
+          <include name="test1"/>
+          <include name="test8"/>
+          <include name="test4"/>
+          <include name="test9"/>
+          <include name="test6"/>
+          <include name="test5"/>
+        </methods>
+      </class> <!-- Tests.TestNGClassOne -->
     </classes>
   </test> <!-- ListenersPractice(failed) -->
 </suite> <!-- Failed suite [Suite] -->

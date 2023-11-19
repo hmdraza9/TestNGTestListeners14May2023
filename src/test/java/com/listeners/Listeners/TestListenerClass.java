@@ -84,7 +84,7 @@ public class TestListenerClass implements ITestListener {
     public void onTestSuccess(ITestResult Result) {
         System.out.println("The name of the testcase passed is :" + Result.getName());
         System.out.println("onTestSuccess");
-        testCasePassCount++;
-    }
+		testCasePassCount++;
+	}
 
 }
